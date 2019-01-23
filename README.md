@@ -3,11 +3,11 @@ Today, you'll be starting your own e-commerce store! You'll be selling shoes and
 
 # Requirements
 
-* When a user loads the page, they should be able to see a list of all the shoes in the sidebar and by default, have the first shoe rendered on the main container (see below).
-* When a user clicks on one of the shoes in the sidebar, they should be able to see more details about the shoe, the reviews associated with it and a form in the main container.
-* When a user fills the form out and submits it, the review should get persisted in the backend and also shown on the page, without refreshing.
+<!-- * When a user loads the page, they should be able to see a list of all the shoes in the sidebar and by default, have the first shoe rendered on the main container (see below). -->
+<!-- * When a user clicks on one of the shoes in the sidebar, they should be able to see more details about the shoe, the reviews associated with it and a form in the main container. -->
+<!-- * When a user fills the form out and submits it, the review should get persisted in the backend and also shown on the page, without refreshing. -->
 
-# API
+<!-- # API
 ```
 $ cd Backend               # Change into the directory
 $ bundle install           # Install the appropriate dependencies/gems
@@ -15,9 +15,9 @@ $ rails db:create          # Creates the database
 $ rails db:migrate         # Migrate the database
 $ rails db:seed            # Seeds the database
 $ rails server             # Start the server
-```
+``` -->
 
-## Getting All Shoes For the Sidebar
+<!-- ## Getting All Shoes For the Sidebar
 ```JavaScript
 #=> Example Request
   GET /shoes
@@ -57,17 +57,17 @@ $ rails server             # Start the server
   },
   // ...
   ]
-```
-
+``` -->
+<!--
 The HTML of how you should render the shoes in the `#shoe-list` should look like the following:
 
 ```html
 <li class="list-group-item">Crocs Classic Clogs</li>
 ```
 
-## Getting One Shoe for the Main Container
+## Getting One Shoe for the Main Container -->
 
-```JavaScript
+<!-- ```JavaScript
 #=> Example Request
   GET /shoes/1
 #=> Example Response
@@ -89,43 +89,26 @@ The HTML of how you should render the shoes in the `#shoe-list` should look like
       }
     ]
   }
-```
+``` -->
 
-The HTML of how you should render the selected shoes in the `#main-shoe` should look like the following:
 
-```HTML
-<img class="card-img-top" id="shoe-image" src="https://media.journeys.com/images/products/1_547493_ZM.JPG">
-<div class="card-body">
-  <h4 class="card-title" id="shoe-name">Crocs Classic Clogs</h4>
-  <p class="card-text" id="shoe-description">Most Comfortable Shoes!</p>
-  <p class="card-text"><small class="text-muted" id="shoe-price">39</small></p>
-  <div class="container" id="form-container">
-    <!-- FORM GOES HERE -->
-  </div>
 
-</div>
-<h5 class="card-header">Reviews</h5>
-<ul class="list-group list-group-flush" id="reviews-list">
-  <!-- REVIEWS GO HERE -->
-</ul>
-```
+<!-- And the HTML of how you should render the form in the `#form-container` should look like the following: -->
 
-And the HTML of how you should render the form in the `#form-container` should look like the following:
-
-```html
+<!-- ```html
 <form id="new-review">
   <div class="form-group">
     <textarea class="form-control" id="review-content" rows="3"></textarea>
     <input type="submit" class="btn btn-primary"></input>
   </div>
 </form>
-```
+``` -->
 
-And the HTML of how you should render the reviews in the `#reviews-list` should look like the following:
+<!-- And the HTML of how you should render the reviews in the `#reviews-list` should look like the following:
 
 ```html
 <li class="list-group-item">All my friends are jealous of me because of this shoe!</li>
-```
+``` -->
 
 ## Submitting the Form
 ```JavaScript
